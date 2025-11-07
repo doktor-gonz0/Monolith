@@ -13764,3 +13764,12 @@ Entries:
   id: 1523
   time: '2025-11-07T19:17:51.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2549
+- author: maybeitsmir
+  changes:
+    - type: Add
+      message: Added a new recipe, macaroni & cheese.
+    - type: Tweak
+      message: Renamed "boiled spaghetti" to "boiled pasta"
+  id: 1524
+  time: '2025-11-07T19:18:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2544
