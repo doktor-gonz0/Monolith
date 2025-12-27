@@ -15255,3 +15255,12 @@ Entries:
   id: 1692
   time: '2025-12-27T21:37:19.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2846
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: >-
+        90mm is now actually stronger than 57mm. AK570 and DRAVON swapped their
+        ammo types. Longbow burst 20 -> 15.
+  id: 1693
+  time: '2025-12-27T21:39:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2839
