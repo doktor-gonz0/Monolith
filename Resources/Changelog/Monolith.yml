@@ -15378,3 +15378,10 @@ Entries:
   id: 1705
   time: '2025-12-30T13:41:36.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2893
+- author: Ilya246
+  changes:
+    - type: Add
+      message: Added tilted plating tile variants for mapping.
+  id: 1706
+  time: '2025-12-30T13:49:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2874
