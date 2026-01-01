@@ -15613,3 +15613,14 @@ Entries:
   id: 1733
   time: '2026-01-01T19:14:53.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2873
+- author: Arcticular1
+  changes:
+    - type: Add
+      message: >-
+        The Colonel and Vizier now have unique items in their locker to give
+        them an edge in battle!
+    - type: Tweak
+      message: Colonel's hardsuit has gotten some stat changes
+  id: 1734
+  time: '2026-01-01T19:16:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2854
