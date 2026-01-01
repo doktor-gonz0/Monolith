@@ -15586,3 +15586,10 @@ Entries:
   id: 1730
   time: '2026-01-01T16:11:47.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2900
+- author: Redrover1760
+  changes:
+    - type: Remove
+      message: Removed the Grand Vizier slot from the Jupiter
+  id: 1731
+  time: '2026-01-01T16:50:43.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2879
