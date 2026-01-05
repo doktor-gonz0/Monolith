@@ -15795,3 +15795,12 @@ Entries:
   id: 1752
   time: '2026-01-05T16:02:13.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2952
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: >-
+        Ravager has been fully remapped. Ravager LPC is moved to Overseer's
+        locker instead of being roundstart for them.
+  id: 1753
+  time: '2026-01-05T16:22:36.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2942
