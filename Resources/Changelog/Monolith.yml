@@ -16010,3 +16010,10 @@ Entries:
   id: 1773
   time: '2026-01-10T02:01:04.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3000
+- author: Ilya246
+  changes:
+    - type: Add
+      message: A new core rule has been added.
+  id: 1774
+  time: '2026-01-10T09:59:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3007
