@@ -16081,3 +16081,14 @@ Entries:
   id: 1782
   time: '2026-01-11T19:53:18.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3018
+- author: NazrinNya
+  changes:
+    - type: Remove
+      message: Lizard scream got removed, hopefully.
+    - type: Tweak
+      message: >-
+        Lizard laugh got replaced with better alternative to match other lizard
+        emotes.
+  id: 1783
+  time: '2026-01-11T22:08:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3020
