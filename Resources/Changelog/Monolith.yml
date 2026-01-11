@@ -16049,3 +16049,10 @@ Entries:
   id: 1778
   time: '2026-01-10T22:52:14.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3005
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: SRDs should now be better at identifying the grid you want to repair.
+  id: 1779
+  time: '2026-01-11T19:49:47.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3014
