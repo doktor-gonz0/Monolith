@@ -16371,3 +16371,14 @@ Entries:
   id: 1812
   time: '2026-01-19T18:07:26.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3052
+- author: deltarune2103
+  changes:
+    - type: Tweak
+      message: >-
+        RCD and SRD are now able to refill by clicking on their cartridges.
+        (Cyborgs are included)
+    - type: Remove
+      message: Frontier RCD removed completely.
+  id: 1813
+  time: '2026-01-19T18:16:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3064
