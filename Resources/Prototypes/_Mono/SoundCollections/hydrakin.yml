@@ -23,6 +23,22 @@
     - /Audio/_Mono/Voice/Hydrakin/hydrakin-laugh-1.ogg
 
 - type: soundCollection
+  id: HydrakinGasp
+  files:
+    - /Audio/_Mono/Voice/Hydrakin/hydrakin-gasp-1.ogg
+    - /Audio/_Mono/Voice/Hydrakin/hydrakin-gasp-2.ogg
+
+- type: soundCollection
+  id: HydrakinTrill
+  files:
+    - /Audio/_Mono/Voice/Hydrakin/hydrakin-trill-1.ogg
+
+- type: soundCollection
+  id: HydrakinWurble
+  files:
+    - /Audio/_Mono/Voice/Hydrakin/hydrakin-wurble-1.ogg
+
+- type: soundCollection
   id: HydrakinFlap
   files:
     - /Audio/_Mono/Voice/Hydrakin/hydrakin-flap1.ogg

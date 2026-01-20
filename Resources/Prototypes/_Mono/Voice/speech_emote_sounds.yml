@@ -13,6 +13,10 @@
     Sigh:
       collection: HydrakinSigh
     Gasp:
-      collection: MaleGasp
+      collection: HydrakinGasp
+    Trill:
+      collection: HydrakinTrill
+    Wurble:
+      collection: HydrakinWurble
     DefaultDeathgasp:
       collection: DeathGasp

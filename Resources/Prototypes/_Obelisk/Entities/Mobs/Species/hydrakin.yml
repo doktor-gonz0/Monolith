@@ -102,6 +102,7 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
+    allowedEmotes: ['Trill', 'Wurble']
   - type: Vocal
     sounds:
       Male: UnisexHydrakin

@@ -83,6 +83,8 @@
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
     state: tail_feathers
+  - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
+    state: tail_feathers_overlay
 
 - type: marking
   id: HydrakinTailSpiny
@@ -92,6 +94,8 @@
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
     state: tail_spiny
+  - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
+    state: tail_spiny_overlay
 
 - type: marking
   id: HydrakinTailFins
@@ -101,6 +105,8 @@
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
     state: tail_fins
+  - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
+    state: tail_fins_overlay
 
 
 - type: marking
@@ -379,6 +385,8 @@
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_hydraseer.rsi
     state: hydra_seer_tail_feathers
+  - sprite: _Obelisk/Mobs/Customization/hydrakin_hydraseer.rsi
+    state: hydra_seer_tail_feathers_overlay
 
 - type: marking
   id: HydrakinHydraSeerEars
