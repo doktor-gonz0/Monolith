@@ -10,7 +10,6 @@
   id: HydrakinCry
   files:
     - /Audio/_Mono/Voice/Hydrakin/hydrakin-cry-1.ogg
-    - /Audio/_Mono/Voice/Hydrakin/hydrakin-cry-2.ogg
 
 - type: soundCollection
   id: HydrakinSigh

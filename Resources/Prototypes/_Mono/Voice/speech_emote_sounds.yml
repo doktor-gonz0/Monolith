@@ -29,8 +29,6 @@
 
 - type: speechSounds
   id: Hydrakin
-  params:
-    volume: -5
   saySound:
     collection: HydrakinSay
   askSound:
