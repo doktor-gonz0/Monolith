@@ -16433,3 +16433,10 @@ Entries:
   id: 1819
   time: '2026-01-20T12:16:39.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3001
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: Buffed Hydra's firerate to be on par with Cyrexa
+  id: 1820
+  time: '2026-01-20T13:06:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3047
