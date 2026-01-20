@@ -252,7 +252,7 @@
 - type: marking
   id: HydrakinEnforcerHead
   bodyPart: Head
-  markingCategory: Head
+  markingCategory: HeadSide
   speciesRestriction: [Hydrakin]
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_enforcer.rsi
@@ -317,7 +317,7 @@
 - type: marking
   id: HydrakinHydraSeerMarking
   bodyPart: Head
-  markingCategory: Head
+  markingCategory: HeadSide
   speciesRestriction: [Hydrakin]
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_hydraseer.rsi
@@ -402,7 +402,7 @@
 - type: marking
   id: HydrakinMysticHead
   bodyPart: Head
-  markingCategory: Head
+  markingCategory: HeadSide
   speciesRestriction: [Hydrakin]
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_mystic.rsi
@@ -458,7 +458,7 @@
 - type: marking
   id: HydrakinRebelHead
   bodyPart: Head
-  markingCategory: Head
+  markingCategory: HeadSide
   speciesRestriction: [Hydrakin]
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_rebel.rsi
@@ -514,7 +514,7 @@
 - type: marking
   id: HydrakinTribalHead
   bodyPart: Head
-  markingCategory: Head
+  markingCategory: HeadSide
   speciesRestriction: [Hydrakin]
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_tribal.rsi
