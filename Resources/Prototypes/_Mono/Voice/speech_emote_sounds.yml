@@ -18,5 +18,22 @@
       collection: HydrakinTrill
     Wurble:
       collection: HydrakinWurble
+    Cough:
+      collection: HydrakinCough
+    Yawn:
+      collection: HydrakinYawn
+    Whistle:
+      collection: HydrakinWhistle
     DefaultDeathgasp:
-      collection: DeathGasp
+      collection: HydrakinDeathgasp
+
+- type: speechSounds
+  id: Hydrakin
+  params:
+    volume: -5
+  saySound:
+    collection: HydrakinSay
+  askSound:
+    collection: HydrakinAsk
+  exclaimSound:
+    collection: HydrakinExclaim
