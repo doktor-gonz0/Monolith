@@ -67,13 +67,15 @@
     state: tail_default
 
 - type: marking
-  id: HydrakinTailBig
+  id: HydrakinTailNub
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Hydrakin]
   sprites:
   - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
-    state: tail_big
+    state: tail_nub
+  - sprite: _Obelisk/Mobs/Customization/hydrakin_parts.rsi
+    state: tail_nub_overlay
 
 - type: marking
   id: HydrakinTailFeathers

@@ -72,7 +72,7 @@
             "directions": 4
         },
         {
-            "name": "tail_big",
+            "name": "tail_nub",
             "directions": 4
         },
         {
@@ -81,6 +81,10 @@
         },
         {
             "name": "tail_spiny_overlay",
+            "directions": 4
+        },
+        {
+            "name": "tail_nub_overlay",
             "directions": 4
         }
     ]
