@@ -16604,3 +16604,10 @@ Entries:
   id: 1838
   time: '2026-01-25T19:06:18.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3080
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Mass scanners now may be used outside of your active hand.
+  id: 1839
+  time: '2026-01-26T15:34:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3125
