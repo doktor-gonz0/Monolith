@@ -16611,3 +16611,16 @@ Entries:
   id: 1839
   time: '2026-01-26T15:34:33.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3125
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Union Wrightworks ships (Svinya, Stubby, Medicus, Sellsword, Takeaway)
+        and Spessbite received edge markers
+    - type: Tweak
+      message: >-
+        Medicus atmos room improved: added air sensors for measuring reserve
+        contents.
+  id: 1840
+  time: '2026-01-26T15:36:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3089
