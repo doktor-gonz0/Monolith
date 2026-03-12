@@ -1,0 +1,156 @@
+- type: entity
+  parent: [ BaseWeaponBattery]
+  id: MAWCFirefly
+  name: M-2SW Firefly
+  description: Unassumingly dangerous, the Firefly is a chemically powered laser weapon that feeds from bottles, catalyzing their contents into lethal beams of chemical danger. Support applications have been considered before, but RND never figured that out, so they just made it deadlier instead. Those poor armored saps will never expect the sickness befalling them after the beams hit.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Battery/MAWCFirefly.rsi
+    layers:
+    - state: icon
+      visible: false
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: mag-2
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: mag-4
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: true
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Battery/MAWCFirefly.rsi
+  - type: Appearance
+  - type: Gun
+    minAngle: 5
+    maxAngle: 10
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: EnergyGun
+    fireModes:
+    - proto: FireflyBoltScorch
+      fireCost: 150
+      name: Scorchshot
+      state: Scorchshot
+    - proto: FireflyBoltChem
+      fireCost: 300
+      name: Chemshot
+      state: Chemshot
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletDisabler
+    fireCost: 100
+  - type: Battery
+    maxCharge: 3000
+    startingCharge: 3000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 100
+    autoRechargePause: true
+    autoRechargePauseTime: 15
+  - type: SolutionContainerManager
+    solutions:
+      solution:
+        maxVol: 30
+  - type: RefillableSolution
+    solution: solution
+  - type: ExaminableSolution
+    solution: solution
+  - type: GunApplySolution
+
+
+- type: entity
+  parent: BaseBullet
+  id: FireflyBoltScorch
+  name: Scorchshot
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: heavylaser
+      shader: unshaded
+  - type: Ammo
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        mask:
+        - Opaque
+  - type: Projectile
+    impactEffect: BulletImpactEffectRedDisabler
+    damage:
+      types:
+        Heat: 20
+        Caustic: 20
+    soundHit:
+      collection: MeatLaserImpact
+
+
+- type: entity
+  parent: BaseBullet
+  id: FireflyBoltChem
+  name: Chemshot
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: heavylaser
+      shader: unshaded
+  - type: Ammo
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        mask:
+        - Opaque
+  - type: Projectile
+    impactEffect: BulletImpactEffectRedDisabler
+    damage:
+      types:
+        Heat: 10
+        Caustic: 5
+    soundHit:
+      collection: MeatLaserImpact
+  - type: SolutionContainerManager
+    solutions:
+      ammo:
+        maxVol: 5
+  - type: SolutionInjectOnProjectileHit
+    transferAmount: 5
+    solution: ammo

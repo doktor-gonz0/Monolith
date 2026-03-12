@@ -142,3 +142,68 @@
   - type: StaticPrice
     price: 600
     vendPrice: 3000
+
+- type: entity
+  parent: [WeaponPistolAnaconda, BaseGunWieldable]
+  id: WeaponRifleMAWCBreacher
+  name: M-4BW Breacher
+  description: A heavily modified design of barely recognizably syndicate origin, the M-4BW "Breacher" is a self regenerating shotgun tuned for breaking down doors, mechs, and the skulls of any poor sap who turns their back upon you. The shell production and firing process makes enough heat to ignite the shells by superheating them between shots.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/MAWCBreacher.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Large
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/MAWCBreacher_inhands.rsi
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/MAWCBreacher_inhands.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+  - type: Gun
+    fireRate: 1.7
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/breacher_fire.ogg
+  - type: GunRequiresWield
+  - type: BasicEntityAmmoProvider
+    proto: ShellBreacher
+    capacity: 10
+    count: 10
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 4
+    rechargeSound:
+      path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
+  - type: AmmoCounter
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+
+- type: entity
+  id: PelletBreacher
+  name: pellet (Breacher)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Heat: 5
+        Structural: 60
+  - type: Sprite
+    sprite: _Mono\Objects\Weapons\Guns\Projectiles\mawc.rsi
+    scale: 0.4, 0.4
+    layers:
+    - state: MAWC_small
+
+- type: entity
+  id: ShellBreacher
+  parent: PelletBreacher
+  name: shell (Breacher)
+  components:
+  - type: ProjectileSpread
+    proto: PelletBreacher
+    count: 4
+    spread: 10

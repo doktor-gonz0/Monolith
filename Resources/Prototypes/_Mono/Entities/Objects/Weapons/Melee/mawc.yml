@@ -1,0 +1,151 @@
+- type: entity
+  parent: BaseMeleeWeaponEnergy
+  id: MAWCHardsaw
+  name: M-13MW Hardsaw
+  description: Deceptively light for its size, the M-13MW "Hardsaw" is a hardlight chainsaw with a slightly more ergonomic frame than its smaller form. Using the same superheated hardlight vibroblade mechanism, but bigger, it sacrifices its partial armor piercing for better raw damage. The hardlight reflects lasers, and it makes for a really damn cool weapon for taking photoshoots with.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Melee/MAWCHardsaw.rsi
+    layers:
+    - state: e_sword
+    - state: e_sword_blade
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/on.ogg
+    soundDeactivate:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/off.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/hum.ogg
+  - type: PointLight
+    enabled: false
+    radius: 2
+    energy: 2
+    color: red
+  - type: Item
+    sprite: _Mono/Objects/Weapons/Melee/MAWCHardsaw.rsi
+    size: Normal
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Melee/MAWCHardsaw.rsi
+    slots:
+    - Back
+    - Belt
+    - SuitStorage
+  - type: ComponentToggler
+    components:
+    - type: Reflect
+      reflectProb: 0.8
+    - type: Sharp
+    - type: Execution
+      doAfterDuration: 4.0
+  - type: ItemToggleSize
+    activatedSize: Large
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/eblade1.ogg
+      params:
+        variation: 0.250
+        volume: -10
+    activatedSoundOnSwing:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/swing.ogg
+      params:
+        variation: 0.125
+    activatedDamage:
+      types:
+        Slash: 20
+        Heat: 15
+  - type: MeleeWeapon
+    heavyStaminaCost: 1
+    wideAnimationRotation: -135
+    attackRate: 1.6
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: DisarmMalus
+    malus: 0.6
+  - type: EnergySword
+    colorOptions:
+    - "#FFCF76"
+    activatedColor: "#FFCF76"
+    blockHacking: true
+
+- type: entity
+  parent: BaseMeleeWeaponEnergy
+  id: MAWCHelcutter
+  name: M-11MW Helcutter
+  description: An oddly designed but otherwise very stabby thing. The M-11MW "Helcutter" is a hardlight microblade with a superheated edge and vibrating blade, which burns into enemies and shreds armor as it does so, penetrating deeper than any market knife. The only issue now is getting a comfortable grip for stabbing with it. At least you'll be assured you can cut the next poor sap's head off.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Melee/MAWCHelcutter.rsi
+    layers:
+    - state: e_sword
+    - state: e_sword_blade
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/on.ogg
+    soundDeactivate:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/off.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/hum.ogg
+  - type: PointLight
+    enabled: false
+    radius: 2
+    energy: 2
+    color: red
+  - type: Item
+    sprite: _Mono/Objects/Weapons/Melee/MAWCHelcutter.rsi
+    size: Normal
+  - type: ComponentToggler
+    components:
+    - type: Sharp
+    - type: Execution
+      doAfterDuration: 4.0
+  - type: ItemToggleSize
+    activatedSize: Large
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/eblade1.ogg
+      params:
+        variation: 0.250
+        volume: -10
+    activatedSoundOnSwing:
+      path: /Audio/_Goobstation/Weapons/EswordWelder/swing.ogg
+      params:
+        variation: 0.125
+    activatedDamage:
+      types:
+        Piercing: 10
+        Heat: 15
+  - type: MeleeWeapon
+    heavyStaminaCost: 1
+    wideAnimationRotation: -135
+    attackRate: 3
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: DisarmMalus
+    malus: 0.6
+  - type: EnergySword
+    colorOptions:
+    - "#FFCF76"
+    activatedColor: "#FFCF76"
+    blockHacking: true

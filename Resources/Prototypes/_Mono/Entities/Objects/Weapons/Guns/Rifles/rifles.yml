@@ -474,3 +474,57 @@
     price: 750
   - type: PirateBountyItem
     id: StandardFactionLongarm
+
+- type: entity
+  parent: [WeaponPistolAnaconda, BaseGunWieldable]
+  id: WeaponRifleMAWCWarhead
+  name: M-71SHW Warhead
+  description: Designed and built using tools from the very Maw of Rubicon itself, the elite M-71SHW "Warhead" is a handheld WMD of sheer awesome. Renowned by MAWC as its best ground weapon, and feared by TSF, it can tear structures and people into nothing like you've never seen before. Just... good luck using it at all without breaking your bank from self inflicted medical costs.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/MAWCWarhead.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Large
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/MAWCWarhead_inhands.rsi
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/MAWCWarhead_inhands.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Back
+  - type: Gun
+    fireRate: 1.7
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/warhead_fire.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletWarhead
+    capacity: 20
+    count: 20
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 10
+    rechargeSound:
+      path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
+  - type: AmmoCounter
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+
+- type: entity
+  id: BulletWarhead
+  name: bullet (Warhead)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 50
+        Heat: 10
+        Structural: 150
+  - type: Sprite
+    sprite: _Mono\Objects\Weapons\Guns\Projectiles\mawc.rsi
+    layers:
+    - state: MAWC_big

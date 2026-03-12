@@ -1,0 +1,17 @@
+﻿{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites made by Zethine(synthetic_086 on discord).",
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "states": [
+    {
+      "name": "MAWC_big"
+    },
+    {
+      "name": "MAWC_small"
+    }
+  ]
+}

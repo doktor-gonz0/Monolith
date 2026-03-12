@@ -175,6 +175,14 @@
   color: "#419E23"
   image: /Textures/_Mono/Companies/BMC.png
 
+- type: company
+  id: MAWC
+  form: Protagonist
+  name: MAWC
+  description: mawc-description
+  color: "#C97D7D"
+  image: /Textures/_Mono/Companies/ullman_industries.png
+
 
 # Religious groups
 
